@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 const { width, height } = Dimensions.get('window');
 
-const PrincipalTela = () => {
+const MainScreen = () => {
   return (
     <LinearGradient
       colors={['#4c669f', '#3b5998', '#192f6a']}
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PrincipalTela;
+export default MainScreen;
