@@ -30,14 +30,14 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: 'bold',
     marginBottom: 20,
-    fontFamily: 'Satoshi',
+    fontFamily: 'custom-font',
     color: '#fff',
   },
   description: {
     fontSize: 18,
     textAlign: 'center',
     marginHorizontal: 20,
-    fontFamily: 'Satoshi',
+    fontFamily: 'custom-font',
     color: '#fff',
   },
 });

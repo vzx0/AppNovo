@@ -4,11 +4,9 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as FileSystem from 'expo-file-system';
 
 const questions = [
-  { type: 'text', question: 'Qual é o seu hobby favorito?' },
-  { type: 'choice', question: 'Qual é o seu esporte favorito?', options: ['Futebol', 'Basquete', 'Vôlei', 'Natação'] },
-  { type: 'text', question: 'Qual é o nome do seu primeiro animal de estimação?' },
-  { type: 'choice', question: 'Qual é a sua cor favorita?', options: ['Azul', 'Verde', 'Vermelho', 'Amarelo'] },
-  { type: 'text', question: 'Qual é o seu livro favorito?' }
+  { type: 'choice', question: 'Qual mercado você frequenta mais?', options: ['Semar', 'Veran', 'Swift', 'Shibata'] },
+  { type: 'text', question: 'Qual tipo de produto você costuma comprar?' },
+  { type: 'choice', question: 'Você gostaria de receber ofertas?', options: ['Sim', 'Não'] },
 ];
 
 const RegisterQuestionsScreen = ({ navigation, route }) => {
@@ -140,13 +138,13 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: 'bold',
     marginBottom: 20,
-    fontFamily: 'Satoshi',
+    fontFamily: 'Satoshi-Black',
   },
   question: {
     fontSize: 20,
     textAlign: 'center',
     marginHorizontal: 20,
-    fontFamily: 'Satoshi',
+    fontFamily: 'Satoshi-Regular',
     marginBottom: 20,
   },
   input: {
@@ -156,7 +154,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 5,
-    fontFamily: 'Satoshi',
+    fontFamily: 'Satoshi-Medium',
   },
   optionsContainer: {
     width: '80%',
@@ -176,7 +174,7 @@ const styles = StyleSheet.create({
   },
   optionText: {
     fontSize: 18,
-    fontFamily: 'Satoshi',
+    fontFamily: 'Satoshi-Regular',
   },
   selectedOptionText: {
     color: '#6200EE',
@@ -217,7 +215,7 @@ const styles = StyleSheet.create({
   backButtonText: {
     color: '#6200EE',
     fontSize: 18,
-    fontFamily: 'Satoshi',
+    fontFamily: 'Satoshi-Regular',
     marginLeft: 5,
   },
   nextButton: {
@@ -234,7 +232,7 @@ const styles = StyleSheet.create({
   nextButtonText: {
     color: '#fff',
     fontSize: 18,
-    fontFamily: 'Satoshi',
+    fontFamily: 'Satoshi-Regular',
   },
 });
 
